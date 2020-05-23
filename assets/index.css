@@ -16,12 +16,14 @@ body {
   display: flex;
   align-items: center;
 }
+.img-style {
+  box-shadow: -1px 10px 10px 0 #ccc;
+}
 
 .content {
   width: 80%;
   height: 90%;
   margin: 0 1em;
-  border-radius: 5px;
 }
 .right {
   background: url("images/pattern-bg.svg") no-repeat;
@@ -39,7 +41,7 @@ body {
   font-size: 32px;
   font-weight: 300;
   line-height: 1.5em;
-
+  color: hsl(228, 45%, 44%);
   padding: 0 1em;
   margin-top: 3.5em;
 }
