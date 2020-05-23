@@ -10,7 +10,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 .main-wrapper {
-  /* background: firebrick; */
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -26,7 +25,6 @@ body {
 }
 .right {
   background: url("images/pattern-bg.svg") no-repeat;
-  /* background: turquoise; */
 }
 
 .img-contain {
@@ -35,15 +33,24 @@ body {
 
 .left {
   background: url("images/pattern-quotes.svg") no-repeat;
-  /* background: turquoise; */
 }
 
 .testimony {
   font-size: 32px;
-  font-weight: 500;
-  line-height: 2em;
-  /* background: yellow; */
+  font-weight: 300;
+  line-height: 1.5em;
+
+  padding: 0 1em;
   margin-top: 3.5em;
+}
+
+.Author {
+  text-align: right;
+  color: hsl(228, 45%, 44%);
+}
+.Author span {
+  opacity: 0.5;
+  padding-left: 0.5em;
 }
 
 .attribution {
