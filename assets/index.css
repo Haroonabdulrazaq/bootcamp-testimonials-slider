@@ -12,7 +12,6 @@ body {
 .main-wrapper {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
   display: flex;
   align-items: center;
 }
@@ -31,15 +30,36 @@ body {
 }
 
 .btn {
+  background: white;
+  width: 100px;
+  height: 50px;
+  padding-top: 0.5em;
   position: absolute;
-}
-
-.prev {
-  background: url("images/icon-prev.svg") no-repeat;
+  bottom: 0;
+  left: 10%;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .img-contain {
   background-size: contain;
+}
+
+.prev {
+  width: 100%;
+  height: 50%;
+  margin-left: 1em;
+  background: url("images/icon-prev.svg") no-repeat;
+}
+
+.next {
+  /* background: green; */
+  margin-left: 1em;
+  width: 100%;
+  height: 50%;
+  background: url("images/icon-next.svg") no-repeat;
 }
 
 .left {
