@@ -7,15 +7,12 @@ body {
   background: #eee;
   height: 100vh;
   max-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: "Inter", sans-serif;
 }
 .main-wrapper {
-  background: firebrick;
-  width: 90%;
-  height: 80%;
+  /* background: firebrick; */
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -27,14 +24,26 @@ body {
   margin: 0 1em;
   border-radius: 5px;
 }
-.left {
-  background: yellow;
-  /* background: url("assets/images/pattern-bg.svg") no-repeat; */
+.right {
+  background: url("images/pattern-bg.svg") no-repeat;
+  /* background: turquoise; */
 }
 
-.right {
-  background: green;
-  /* background: url("assets/images/"); */
+.img-contain {
+  background-size: contain;
+}
+
+.left {
+  background: url("images/pattern-quotes.svg") no-repeat;
+  /* background: turquoise; */
+}
+
+.testimony {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 2em;
+  /* background: yellow; */
+  margin-top: 3.5em;
 }
 
 .attribution {
