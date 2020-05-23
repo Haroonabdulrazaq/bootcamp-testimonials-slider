@@ -27,6 +27,15 @@ body {
 }
 .right {
   background: url("images/pattern-bg.svg") no-repeat;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+}
+
+.prev {
+  background: url("images/icon-prev.svg") no-repeat;
 }
 
 .img-contain {
