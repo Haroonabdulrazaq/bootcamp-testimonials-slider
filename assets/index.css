@@ -4,7 +4,6 @@
   padding: 0;
 }
 body {
-  background: #eee;
   height: 100vh;
   max-width: 100vw;
   font-family: "Inter", sans-serif;
@@ -33,14 +32,18 @@ body {
   background: white;
   width: 100px;
   height: 50px;
-  padding-top: 0.5em;
+  padding-top: 0.4em;
   position: absolute;
   bottom: 0;
   left: 10%;
   border-radius: 25px;
-  cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.btn-wrapper {
+  border: none;
+  cursor: pointer;
 }
 
 .img-contain {
@@ -50,7 +53,7 @@ body {
 .prev {
   width: 100%;
   height: 50%;
-  margin-left: 1em;
+  margin-left: 1.2em;
   background: url("images/icon-prev.svg") no-repeat;
 }
 
@@ -81,6 +84,14 @@ body {
 .Author span {
   opacity: 0.5;
   padding-left: 0.5em;
+}
+
+.disappear {
+  display: none;
+}
+
+.appear {
+  display: inline-block;
 }
 
 .attribution {
