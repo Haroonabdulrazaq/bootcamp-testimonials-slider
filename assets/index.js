@@ -2,8 +2,6 @@ const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const tanya = document.getElementById("tanya-wrapper");
 const john = document.getElementById("john-wrapper");
-const tanyaAuthor = document.getElementById("tanya-author");
-const tanyaImg = document.getElementById("tanya-img");
 
 prev.addEventListener("click", (event) => {
   tanya.classList.remove("tanya-wrapper");
