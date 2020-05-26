@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
 body {
-  height: 100vh;
+  height: auto;
   max-width: 100vw;
   font-family: "Inter", sans-serif;
 }
@@ -102,10 +103,6 @@ body {
   padding-left: 0.5em;
 }
 
-.disappear {
-  display: none;
-}
-
 .appear {
   display: inline-block;
 }
@@ -121,4 +118,54 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 500px) {
+  .tanya-wrapper,
+  .john-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .tanya-img,
+  .john-img {
+    width: 100%;
+    height: 100%;
+    margin: 1em auto;
+  }
+
+  .testimony {
+    font-size: 28px;
+  }
+  .Author {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .tanya-wrapper,
+  .john-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .tanya-img,
+  .john-img {
+    width: 70%;
+    height: 80%;
+    margin: 1em auto;
+  }
+
+  .testimony {
+    font-size: 16px;
+  }
+  .Author {
+    margin-top: 1em;
+  }
+}
+
+.disappear {
+  display: none;
 }
