@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: auto;
+  max-width: 100vw;
+  font-family: "Inter", sans-serif;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.tanya-wrapper,
+.john-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.img-shadow {
+  box-shadow: -1px 10px 10px 0 #ccc;
+}
+
+.content {
+  width: 80%;
+  height: 90%;
+  margin: 0 1em;
+}
+
+.right {
+  background: url("images/pattern-bg.svg") no-repeat;
+}
+
+.tanya-wrapper {
+  position: relative;
+}
+
+.btn {
+  background: white;
+  width: 100px;
+  height: 50px;
+  padding-top: 0.4em;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-wrapper {
+  border: none;
+  cursor: pointer;
+}
+
+.img-contain {
+  background-size: contain;
+}
+.tanya-img,
+.john-img {
+  width: 70%;
+  height: 80%;
+  margin: 4em;
+}
+
+.prev {
+  width: 100%;
+  height: 50%;
+  margin-left: 1.2em;
+  background: url("images/icon-prev.svg") no-repeat;
+}
+
+.next {
+  margin-left: 1em;
+  width: 100%;
+  height: 50%;
+  background: url("images/icon-next.svg") no-repeat;
+}
+
+.left {
+  background: url("images/pattern-quotes.svg") no-repeat;
+}
+
+.testimony {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: hsl(228, 45%, 44%);
+  padding: 0 1em;
+  margin-top: 3.5em;
+}
+
+.Author {
+  text-align: right;
+  color: hsl(228, 45%, 44%);
+}
+.Author span {
+  opacity: 0.5;
+  padding-left: 0.5em;
+}
+
+.appear {
+  display: inline-block;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  background: darkcyan;
+  width: 100vw;
+  height: 10vh;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 500px) {
+  .tanya-wrapper,
+  .john-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .tanya-img,
+  .john-img {
+    width: 100%;
+    height: 100%;
+    margin: 1em auto;
+  }
+
+  .testimony {
+    font-size: 28px;
+  }
+  .Author {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .tanya-wrapper,
+  .john-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .tanya-img,
+  .john-img {
+    width: 70%;
+    height: 80%;
+    margin: 1em auto;
+  }
+
+  .testimony {
+    font-size: 16px;
+  }
+  .Author {
+    margin-top: 1em;
+  }
+}
+
+.disappear {
+  display: none;
+}
